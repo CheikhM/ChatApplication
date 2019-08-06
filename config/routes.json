@@ -1,0 +1,16 @@
+{
+  "login" :
+    {
+      "controller" : "DefaultController",
+      "action"  : "Login"
+    },
+  "register" : {
+      "controller" : "DefaultController",
+      "action" : "Register"
+  },
+  "home" : {
+    "controller" : "DefaultController",
+    "action" : "Home"
+  }
+
+}
