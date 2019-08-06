@@ -1,8 +1,4 @@
 Documentation
-Notice: 
-  - I didn't have enough time to create something more professional ;)
-  - I was writing code quickly, and you can show my coding skills when taking a look at the script code  
-
 # I didn't use any Framework, and tried to code everything from scratch ;)
 # the application present a simple routing and templating systems
 
@@ -24,4 +20,10 @@ Installation Steps:
     3- create some users and join the application ;)
 
 
+Notice: 
+  - I didn't have enough time to create something more professional ;)
+  - I was writing code quickly, and you can show my coding skills when taking a look at the script code  
+  - Online users system does'nt work but 80% of the code was realized !
+  - Private messaging  deoesn't work but 80% of the code was realize !
+  
 Kindly Regards :)
