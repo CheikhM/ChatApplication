@@ -13,9 +13,8 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
             </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">keep logging</label>
+            <div class="clearFix">
+                <a href="register">create an account! ?</a>
             </div>
             <button type="submit" class="btn btn-primary">login</button>
         </form>
