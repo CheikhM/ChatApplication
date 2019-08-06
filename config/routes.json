@@ -24,6 +24,11 @@
     "controller" : "AuthController",
     "action" : "Logout",
     "with_data" : "false"
+  },
+  "rest/message" : {
+    "controller" : "RESTController",
+    "action" : "Index",
+    "with_data" : "true"
   }
 
 }

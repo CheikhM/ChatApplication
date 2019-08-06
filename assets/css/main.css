@@ -10,7 +10,6 @@ background: #DCDCDC;
     border: 2px solid #DCDCDC;
     border-radius: 15px;
     margin-top: 8px;
-    position: relative;
 }
 
 .chat-box .chat-box__content{
@@ -23,7 +22,10 @@ background: #DCDCDC;
     height: 90%;
     overflow-x: auto;
 }
-
+.list-messages__content .date {
+    float: right;
+    font-size: 10px;
+}
 .chat-box__content .list-messages{
     height: 100%;
 }
@@ -42,6 +44,9 @@ background: #DCDCDC;
     margin: auto;
     text-align: center;
     height: 45px;
+}
+.chat-box .chat-box__header {
+    position: relative;
 }
 .chat-box .chat-box__header h2{
     margin: auto;

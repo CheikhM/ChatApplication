@@ -9,9 +9,11 @@ require_once DIRECTORY_PATH . '/../core/classes/Controller.php';
 require_once  DIRECTORY_PATH . '/../core/classes/Request.php';
 require_once DIRECTORY_PATH . '/../src/Controllers/DefaultController.php';
 require_once DIRECTORY_PATH . '/../src/Controllers/AuthController.php';
+require_once DIRECTORY_PATH . '/../src/Controllers/RESTController.php';
 require_once DIRECTORY_PATH . '/../core/classes/Manager.php';
 require_once 'connexion.php';
 require_once DIRECTORY_PATH . '/../src/Model/UserManager.php';
+require_once DIRECTORY_PATH . '/../src/Model/MessageManager.php';
 
 
 $request = new Request();

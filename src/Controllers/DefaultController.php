@@ -32,6 +32,7 @@ class DefaultController extends Controller
     #to render main chat page
     public function Home(){
         if(AuthController::Auth()) {
+
             $this->render('home');
         }
         else

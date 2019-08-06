@@ -25,199 +25,37 @@
 <!-- end fixed privat chat div -->
 
 <div class="container chat-box">
-    <div class="chat-box__logout">
-        <a href="./logout">
-            <span>Logout</span>
-            <img src="assets/images/logout.png" alt="logout button" />
-        </a>
-    </div>
     <div class="row chat-box__header">
+        <div class="chat-box__logout">
+            <a href="./logout">
+                <span>Logout</span>
+                <img src="assets/images/logout.png" alt="logout button" />
+            </a>
+        </div>
         <h2>Welcome <span><?= $_SESSION['username']; ?></span></h2>
     </div>
     <div class="row chat-box__content">
         <div class="col-md-9 list-messages">
             <div class="row list-messages__content">
                 <div class="col-12">
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
+                    <?php
+                        $count_messages = count($messages);
+                        $i = 0;
+                    ?>
+                    <?php foreach ($messages as $message) { ?>
+                        <div class="row">
+                            <div class="col">
+                                <span class="message"><?= $message['content']; ?></span>
+                                <span class="date"><?= $message['created']; ?></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 1</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 2</span>
-                            <span class="date">23/10/1996</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="message">Message 3</span>
-                            <span class="date">23/10/1994</span>
-                        </div>
-                    </div>
+                    <?php
+                        if (++$i === $count_messages) {
+                            $next_message = ($message['public_id'] + 1);
+                        echo "<input type='hidden' class='last__message_id' value='$next_message' />";
+                        }
+                    }
+                    ?>
                 </div>
             </div>
             <div class="row send-message">

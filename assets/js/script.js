@@ -29,7 +29,18 @@ $(".chatClose").click(function(){
     $(this).parent().parent().remove();
 });
 
+
 $(".list-messages__content").scrollTop($('.list-messages__content')[0].scrollHeight);
 
-return false;
+
+
+function updateChat(){
+
+}
+
+// to get messages every three seconds
+setInterval(function(){
+    updateChat();
+}, 3000);
+
 });

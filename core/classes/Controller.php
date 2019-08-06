@@ -8,6 +8,11 @@ class Controller
     {
         ob_start();
         if (!empty($filename)) {
+
+            $message_manager = new MessageManager();
+
+            $messages = $message_manager->getAllMessages();
+
             require_once str_replace("\\", "/", __DIR__) . '/../../pages/' . $filename . '.hiit.php';
             $content = ob_get_clean();
 
@@ -18,12 +23,12 @@ class Controller
     }
 
 
-    static function ForceRedirect($url)
+    /*static function ForceRedirect($url)
     {
             echo '<script type="text/javascript">';
             echo 'window.location.href="' . $url . '";';
             echo '</script>';
 
-    }
+    }*/
 
 }
