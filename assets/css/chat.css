@@ -60,7 +60,7 @@ html, body
     height: 250px;
     border-left: 1px solid #b2b2b2;
     border-right: 1px solid #b2b2b2;
-    background: #EDEFF4;
+    background: white;
     overflow: auto;
 }
 .panel.panel-chat .panel-body::-webkit-scrollbar {

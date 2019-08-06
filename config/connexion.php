@@ -7,6 +7,6 @@ $data = [
     'dbname' => 'chatdb'
 ];
 
-$con = mysqli_connect($data['host'], $data['username'], $data['password'], $data['dbname']);
+Manager::connectDB($data);
 
 ?>

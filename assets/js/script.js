@@ -1,4 +1,6 @@
-$(".chatMinimize").click(function(){
+$(document).ready(function(){
+
+    $(".chatMinimize").click(function(){
     if($(this).parent().parent().hasClass('mini'))
     {
         $(this).parent().parent().removeClass('mini').addClass('normal');
@@ -25,4 +27,9 @@ $(".chatMinimize").click(function(){
 });
 $(".chatClose").click(function(){
     $(this).parent().parent().remove();
+});
+
+$(".list-messages__content").scrollTop($('.list-messages__content')[0].scrollHeight);
+
+return false;
 });

@@ -2,12 +2,17 @@
 /*
  * Simple routing system by Cheikh El Moctar .htaccess file
  */
-
+session_start();
 define("DIRECTORY_PATH", str_replace("\\", '/',__DIR__ ));
 
 require_once DIRECTORY_PATH . '/../core/classes/Controller.php';
 require_once  DIRECTORY_PATH . '/../core/classes/Request.php';
 require_once DIRECTORY_PATH . '/../src/Controllers/DefaultController.php';
+require_once DIRECTORY_PATH . '/../src/Controllers/AuthController.php';
+require_once DIRECTORY_PATH . '/../core/classes/Manager.php';
+require_once 'connexion.php';
+require_once DIRECTORY_PATH . '/../src/Model/UserManager.php';
+
 
 $request = new Request();
 
@@ -39,7 +44,13 @@ if(!routeExists($request, $routes_list)){
 
 $route_info = $routes_list[$request->getRoute()];
 $controller = new $route_info['controller']();
-$controller->{$route_info['action']}();
 
+if($route_info['with_data'] == "true") {
+    $controller->{$route_info['action']}($request);
+}
+else {
+    $controller->{$route_info['action']}();
+
+}
 
 ?>

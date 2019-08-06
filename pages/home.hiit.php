@@ -16,26 +16,6 @@
             <span>asdasdsassssssssssssssssssssssssssssssssssssssss</span>
             <div class="clearFix"></div>
         </div>
-        <div class="messageMe">
-            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
-            <span>asdasdssadasdasdassssssssssssssssssssssssssssssssssssssssssdasdasd</span>
-            <div class="clearFix"></div>
-        </div>
-        <div class="messageHer">
-            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
-            <span>asdasdsassssssssssssssssssssssssssssssssssssssss</span>
-            <div class="clearFix"></div>
-        </div>
-        <div class="messageMe">
-            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
-            <span>asdasdssadasdasdassssssssssssssssssssssssssssssssssssssssssdasdasd</span>
-            <div class="clearFix"></div>
-        </div>
-        <div class="messageHer">
-            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
-            <span>asdasdsassssssssssssssssssssssssssssssssssssssss</span>
-            <div class="clearFix"></div>
-        </div>
         <div class="clearFix"></div>
     </div>
     <div class="panel-footer">
@@ -45,13 +25,200 @@
 <!-- end fixed privat chat div -->
 
 <div class="container chat-box">
+    <div class="chat-box__logout">
+        <a href="./logout">
+            <span>Logout</span>
+            <img src="assets/images/logout.png" alt="logout button" />
+        </a>
+    </div>
     <div class="row chat-box__header">
-        <h2>Chat Room</h2>
+        <h2>Welcome <span><?= $_SESSION['username']; ?></span></h2>
     </div>
     <div class="row chat-box__content">
         <div class="col-md-9 list-messages">
             <div class="row list-messages__content">
-                KKK
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 1</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 2</span>
+                            <span class="date">23/10/1996</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="message">Message 3</span>
+                            <span class="date">23/10/1994</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row send-message">
                 <input type="text" placeholder="type your message here !" />

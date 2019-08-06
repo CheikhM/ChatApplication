@@ -4,16 +4,6 @@
 class DefaultController extends Controller
 {
 
-    #verify if user is connected !
-    static function Auth() {
-
-        if(isset($_SESSION['user_logged_in']) && !empty($_SESSION['session_id'])) {
-            return true;
-        }
-
-        return false;
-    }
-
     # to logged out
     static function Logout(){
         if(session_destroy()){
@@ -41,6 +31,12 @@ class DefaultController extends Controller
 
     #to render main chat page
     public function Home(){
-        $this->render('home');
+        if(AuthController::Auth()) {
+            $this->render('home');
+        }
+        else
+        {
+            header("location: ./login");
+        }
     }
 }

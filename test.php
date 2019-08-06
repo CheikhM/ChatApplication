@@ -1,14 +1,16 @@
 <?php
 
-$json = file_get_contents("routes.json");
+require_once 'config/connexion.php';
+require_once 'core/classes/Manager.php';
+require_once 'src/Model/UserManager.php';
 
 
-$json_data = json_decode($json, true);
+$manager = new UserManager();
 
+Manager::connectDB($data);
 
+$user_data = ['username' => 'Osman', 'email' => 'email@gamil.com', 'password' => md5('12345')];
 
-// no route found
-if(empty($json_data['login'])){
-    echo "yes";
-}
+$result = $manager->addUser($user_data);
 
+var_dump($result);

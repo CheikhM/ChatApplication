@@ -2,15 +2,28 @@
   "login" :
     {
       "controller" : "DefaultController",
-      "action"  : "Login"
+      "action"  : "Login",
+      "with_data" : "false"
     },
   "register" : {
       "controller" : "DefaultController",
-      "action" : "Register"
+      "action" : "Register",
+      "with_data" : "false"
   },
   "home" : {
     "controller" : "DefaultController",
-    "action" : "Home"
+    "action" : "Home",
+    "with_data" : "false"
+  },
+  "auth/login" : {
+    "controller" : "AuthController",
+    "action" : "verifyCredentials",
+    "with_data" : "true"
+  },
+  "logout" : {
+    "controller" : "AuthController",
+    "action" : "Logout",
+    "with_data" : "false"
   }
 
 }

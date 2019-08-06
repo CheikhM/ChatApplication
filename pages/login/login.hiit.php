@@ -1,13 +1,17 @@
 <div class="container">
     <div class="row">
-        <form action="" method="post">
+        <form action="./auth/login" method="post">
+            <div class="sys_message">
+                <?= (isset($_SESSION['system_message'])) ? $_SESSION['system_message'] : '' ?>
+                <?php unset($_SESSION['system_message']); ?>
+            </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Username</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+                <label for="username">Username</label>
+                <input type="text" name="username" class="form-control" id="username" placeholder="Enter username" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
             </div>
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
