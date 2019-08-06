@@ -16,9 +16,9 @@ Prerequisites:
     3-
 
 Installation Steps:
-    1-
-    2-
-    3-
+    1- modify the confugiration file on config/connexion.php
+    2- import the database
+    3- create some users and join the application ;)
 
 
 Kindly Regards :)
