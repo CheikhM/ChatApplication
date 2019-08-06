@@ -17,4 +17,15 @@ class MessageManager extends Manager
 
         return false;
     }
+
+    function  getMessageByID($message_id){
+
+        $query = mysqli_query(self::$db, "SELECT * FROM public_messages WHERE public_id = '$message_id'");
+        if($query) {
+            $row = mysqli_fetch_assoc($query);
+            return $row;
+        }
+
+        return [];
+    }
 }

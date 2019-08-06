@@ -37,7 +37,7 @@
     <div class="row chat-box__content">
         <div class="col-md-9 list-messages">
             <div class="row list-messages__content">
-                <div class="col-12">
+                <div class="col-12 messages-rows">
                     <?php
                         $count_messages = count($messages);
                         $i = 0;
