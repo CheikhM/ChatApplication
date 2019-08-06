@@ -3,6 +3,9 @@
  * Simple routing system by Cheikh El Moctar .htaccess file
  */
 session_start();
+error_reporting(0);
+ini_set('display_errors', 0);
+
 define("DIRECTORY_PATH", str_replace("\\", '/',__DIR__ ));
 
 require_once DIRECTORY_PATH . '/../core/classes/Controller.php';

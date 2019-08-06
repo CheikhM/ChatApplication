@@ -45,6 +45,33 @@ class AuthController extends Controller
 
     }
 
+    #function new user
+    function newUser(Request $request){
+        if($request->method != "POST")
+        {
+            header('Status: 301 Moved Permanently', false, 301);
+            header("location: ../home");
+
+        }
+        else
+        {
+            $data = $request->data;
+            $user_manager = new UserManager();
+
+            if($user_manager->addUser($data)){
+
+                $_SESSION['user_logged_in'] = true;
+                $_SESSION['username'] = $data['username'];
+
+                header("location: ../home");
+            }
+            else {
+                $_SESSION['system_message'] = 'an error was occured during the process !';
+                header("location: ./register");
+            }
+        }
+    }
+
     //function to logged out
 
     function Logout(){

@@ -1,21 +1,23 @@
 <!-- fixed private chat div -->
 <div class="panel panel-chat">
     <div class="panel-heading">
-        <a href="#" class="chatMinimize" onclick=""><span>Özgür Gürbüz</span></a>
-        <a href="#" class="chatClose" onclick=""><i class="glyphicon glyphicon-remove"></i></a>
+        <a href="#" class="chatMinimize" onclick=""><span>username</span></a>
+        <a href="#" class="chatClose" onclick=""><img src="assets/images/close.png" width="100%" /></a>
         <div class="clearFix"></div>
     </div>
     <div class="panel-body">
-        <div class="messageMe">
-            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
-            <span>asdasdssadasdasdassssssssssssssssssssssssssssssssssssssssssdasdasd</span>
+        <!--
+        <div class="sentByMe">
+            <img src="assets/images/avatar.jpg" alt=""/>
+            <span>mesage text</span>
             <div class="clearFix"></div>
         </div>
-        <div class="messageHer">
-            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" alt=""/>
+        <div class="sentByHim">
+            <img src="assets/images/avatar.jpg" alt=""/>
             <span>asdasdsassssssssssssssssssssssssssssssssssssssss</span>
             <div class="clearFix"></div>
         </div>
+        -->
         <div class="clearFix"></div>
     </div>
     <div class="panel-footer">
@@ -33,6 +35,7 @@
             </a>
         </div>
         <h2>Welcome <span><?= $_SESSION['username']; ?></span></h2>
+        <input type="hidden" class="current_user_id" value="<?= $current_user_id; ?>" />
     </div>
     <div class="row chat-box__content">
         <div class="col-md-9 list-messages">
@@ -63,10 +66,39 @@
             </div>
         </div>
         <div class="col-md-3 list-users">
-            List Users
+            <div class="row">
+                <div class="col-12 list-users__header">
+                    <h2>Users</h2>
+                </div>
+            </div>
+            <?php foreach ($users as $user) { ?>
+                <?php
+                    #time finish before fixing this part of code :(
+                    $offline = '';
+
+                    $manager = new UserManager();
+                    if(!$manager->isOnline($user['user_id'])){
+                        $offline = 'offline';
+                    }
+
+                    $manager->isOnline($user['user_id']);
+                ?>
+
+                <div class="row list-users__single-user" >
+                    <div class="col-12">
+                        <span class="username"><?= $user['username']; ?></span>
+                        <div class="status <?= $offline; ?>"></div>
+                        <a href="#">
+                            <img src="assets/images/send.png" class="chat_with" />
+                        </a>
+                        <input type="hidden" class="user_id" value="<?= $user['user_id'] ?>" />
+                    </div>
+                </div>
+            <?php } ?>
+
         </div>
     </div>
     <div class="row chat-box__footer">
-        <span>all copyright reserved</span>
+        <span>all &copy; reserved 2019</span>
     </div>
 </div>

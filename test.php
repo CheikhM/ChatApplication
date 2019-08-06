@@ -1,10 +1,18 @@
-<div class="container">
-    <div class="row">
-        <form action="http://127.0.0.1/scripts/ChatApplication/rest/message" method="post">
-                <input type="text" name="action" value="retrieve" >
-                <input type="text" name="scope" value="public" >
-                <input type="text" name="message_id" value="5" >
-                <input type="submit" />
-        </form>
-    </div>
-</div>
+<?php
+require_once './core/classes/Manager.php';
+require_once './config/connexion.php';
+
+Manager::connectDB($data);
+
+$curent = 1;
+$user = 2;
+
+$sql = "SELECT * FROM message WHERE (from_id='$curent' OR from_id='$user') AND (to_id='$user' OR to_id='$curent') ";
+
+$query = mysqli_query(Manager::$db, $sql);
+
+echo "<pre>";
+while ($row = mysqli_fetch_assoc($query)){
+
+    print_r($row);
+}

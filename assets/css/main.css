@@ -31,11 +31,34 @@ background: #DCDCDC;
 }
 
 .chat-box__content .list-users{
-
     border-left: 1px solid black;
 }
-
-
+.list-users__header {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.list-users__header h2 {
+    text-align: center;
+}
+.list-users .chat_with{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+.list-users__single-user
+{
+    border: 1px solid #cac3c3;
+    line-height: 15px;
+}
+.list-users__single-user .status{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%!important;
+    background-color: blue;
+    display: inline-block;
+    float: right;
+}
 .send-message {
     margin-bottom: 10px;
 }

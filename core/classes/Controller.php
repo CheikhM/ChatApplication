@@ -10,8 +10,11 @@ class Controller
         if (!empty($filename)) {
 
             $message_manager = new MessageManager();
+            $user_manager = new UserManager();
 
             $messages = $message_manager->getAllMessages();
+            $users = $user_manager->getAllUsers();
+            $current_user_id = $user_manager->getCurrentUser()['user_id'];
 
             require_once str_replace("\\", "/", __DIR__) . '/../../pages/' . $filename . '.hiit.php';
             $content = ob_get_clean();

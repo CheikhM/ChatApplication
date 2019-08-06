@@ -1,21 +1,10 @@
-*
-{
-    -webkit-border-radius: 0px  !important;
-    -moz-border-radius: 0px  !important;
-    border-radius: 0px !important;
-}
-html, body
-{
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
 .clearFix
 {
     clear:both;
 }
 .panel.panel-chat
 {
+    display: none;
     position: fixed;
     bottom:0;
     left:0;
@@ -50,6 +39,7 @@ html, body
     width: 11px;
     color:#FFF;
     float:right;
+    margin-right: 5px;
 }
 .panel.panel-chat .panel-body
 {
@@ -66,17 +56,17 @@ html, body
 .panel.panel-chat .panel-body::-webkit-scrollbar {
     display: none;
 }
-.panel.panel-chat .panel-body .messageMe
+.panel.panel-chat .panel-body .sentByMe
 {
     border-bottom:1px dotted #b2b2b2;
 }
-.panel.panel-chat .panel-body .messageMe img
+.panel.panel-chat .panel-body .sentByMe img
 {
     float:left;
     max-width: 50px;
     max-height: 50px;
 }
-.panel.panel-chat .panel-body .messageMe span
+.panel.panel-chat .panel-body .sentByMe span
 {
     display: block;
     float:left;
@@ -89,17 +79,17 @@ html, body
     font-size: 12px;
     word-break: break-all;
 }
-.panel.panel-chat .panel-body .messageHer
+.panel.panel-chat .panel-body .sentByHim
 {
     border-bottom:1px dotted #b2b2b2;
 }
-.panel.panel-chat .panel-body .messageHer img
+.panel.panel-chat .panel-body .sentByHim img
 {
     float:right;
     max-width: 50px;
     max-height: 50px;
 }
-.panel.panel-chat .panel-body .messageHer span
+.panel.panel-chat .panel-body .sentByHim span
 {
     display: block;
     float:right;

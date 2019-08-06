@@ -1,4 +1,9 @@
 {
+  "/" : {
+    "controller" : "DefaultController",
+    "action"  : "Login",
+    "with_data" : "false"
+  },
   "login" :
     {
       "controller" : "DefaultController",
@@ -18,6 +23,11 @@
   "auth/login" : {
     "controller" : "AuthController",
     "action" : "verifyCredentials",
+    "with_data" : "true"
+  },
+  "auth/register" :{
+    "controller" : "AuthController",
+    "action" : "newUser",
     "with_data" : "true"
   },
   "logout" : {

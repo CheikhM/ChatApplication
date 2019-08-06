@@ -17,6 +17,8 @@ class RESTController extends Controller
     {
         $data = $request->data;
         $method = $request->method;
+
+        #get public message for message_id
         if($method == "POST" && $data['action'] == 'retrieve'){
             $scope = $data['scope'];
             switch ($scope){
@@ -26,20 +28,56 @@ class RESTController extends Controller
                     echo json_encode($data);
                     break;
                 case 'private':
-                    $data = $this->getAllPrivateMessages($data['user_id']);
+                    $data = $this->getAllPrivateMessages($data['current_id'], $data['user_id']);
                     header('Content-Type: application/json');
                     echo json_encode($data);
             }
         }
 
-        else{
-            echo "no!";
+        elseif ($method == "POST" && $data['action'] == 'send'){
+            $scope = $data['scope'];
+            $content = htmlspecialchars($data['content']);
+
+            switch ($scope){
+                case 'public':
+                    $user_id = $this->user_manager->getCurrentUser()['user_id'];
+                    $send_it = $this->message_manager->sendPublicMessage($user_id, $content);
+                    if($send_it){
+                        $response_data = ['msg' => 'ok'];
+                        header('Content-Type: application/json');
+                        echo json_encode($response_data);
+                    }
+                    break;
+                case 'private':
+
+            }
+        }
+
+        #update last activity
+        elseif ($method == "POST" && $data['action'] == 'update_status'){
+
+            if($this->user_manager->updateLastActivity($data['user_id'])){
+                $response_data = ['status' => 'updated'];
+                header('Content-Type: application/json');
+                echo json_encode($response_data);
+
+            }
+            else
+            {
+                $response_data = ['status' => 'error_updated'];
+                header('Content-Type: application/json');
+                echo json_encode($response_data);
+            }
+
+
         }
 
     }
 
     //to list all private messages for specific users
-    function getAllPrivateMessages($user_id){
+    function getAllPrivateMessages($current_id, $user_id){
+
+        return $this->message_manager->getAllPrivateMessages($current_id, $user_id);
 
     }
 
