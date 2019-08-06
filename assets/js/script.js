@@ -91,7 +91,7 @@ $(document).ready(function () {
     });
 
 
-    /*
+
     // check for new public messages
     setInterval(function () {
         var id = $('.last__message_id').val();
@@ -106,5 +106,5 @@ $(document).ready(function () {
         updateLastActivity(id);
 
     }, 3000);
-    */
+
 });
