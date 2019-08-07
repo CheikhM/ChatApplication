@@ -1,8 +1,9 @@
 Documentation
 # I didn't use any Framework, and tried to code everything from scratch ;)
 # the application present a simple routing and templating systems
+# most parts of the application are functional, 
+# sending private messages, and online users listing doesn't work well, because of the time  :(
 
- 
 /*************************************************************
 ProjectName: Chat Application
 CreatedBy: CHEIKH EL MOCTAR Mohamed Yehdhih
