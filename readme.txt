@@ -22,7 +22,8 @@ Installation Steps:
 Security Implemenation:
     1- use htmlspecialchars to prevent XSS
     2- use .htaccess to prevent directorty listing 
-    3- I don't have enough time to take care of the application security !
+    3- the application must present a lot of security bugs, but.... 
+    4- I don't have enough time to take care of the application security !
     
 
 Notice: 
