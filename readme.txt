@@ -25,7 +25,6 @@ Security Implemenation:
     3- the application must present a lot of security bugs, but.... 
     4- I don't have enough time to take care of the application security !
     
-
 Notice: 
   - I didn't have enough time to create something more professional ;)
   - I was writing code quickly, and you can show my coding skills when taking a look at the script code  
