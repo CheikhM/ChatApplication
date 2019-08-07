@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f95b779f-f527-43a8-9f9c-589476088a42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/login/login.hiit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/login.hiit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,35 +16,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/MessageManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/login/login.hiit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -73,6 +45,7 @@
       <find>chat_wi</find>
       <find>last</find>
       <find>isO</find>
+      <find>__DIR</find>
       <find>getAllPrivateMessages</find>
     </findStrings>
     <dirStrings>
@@ -104,7 +77,6 @@
         <option value="$PROJECT_DIR$/pages/layout/404error.hiit.php" />
         <option value="$PROJECT_DIR$/core/classes/Manager.php" />
         <option value="$PROJECT_DIR$/config/connexion.php" />
-        <option value="$PROJECT_DIR$/pages/layout/template.hiit.php" />
         <option value="$PROJECT_DIR$/src/Controllers/DefaultController.php" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/css/chat.css" />
@@ -122,10 +94,11 @@
         <option value="$PROJECT_DIR$/src/Model/MessageManager.php" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/pages/login/login.hiit.php" />
+        <option value="$PROJECT_DIR$/pages/layout/template.hiit.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="203" />
     <option name="y" value="192" />
     <option name="width" value="1869" />
@@ -148,30 +121,12 @@
             <path>
               <item name="ChatApplication" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChatApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChatApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChatApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChatApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChatApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChatApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChatApplication" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChatApplication" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChatApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChatApplication" type="b2602c69:ProjectViewProjectNode" />
@@ -223,16 +178,15 @@
       <updated>1565016001712</updated>
       <workItem from="1565016002769" duration="15735000" />
       <workItem from="1565075510125" duration="22563000" />
-      <workItem from="1565101495969" duration="16634000" />
+      <workItem from="1565101495969" duration="18485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67066000" />
+    <option name="totallyTimeSpent" value="68917000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="370" width="1869" height="881" extended-state="0" />
-    <editor active="true" />
+    <frame x="203" y="192" width="1869" height="881" extended-state="1" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16473189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -384,13 +338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/layout/template.hiit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/chat.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -423,13 +370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -468,22 +408,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
           <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/UserManager.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -499,6 +429,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/layout/template.hiit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/MessageManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -510,6 +457,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>
     </entry>
