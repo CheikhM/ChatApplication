@@ -19,6 +19,11 @@ Installation Steps:
     2- import the database
     3- create some users and join the application ;)
 
+Security Implemenation:
+    1- use htmlspecialchars to prevent XSS
+    2- use .htaccess to prevent directorty listing 
+    3- I don't have enough time to take care of the application security !
+    
 
 Notice: 
   - I didn't have enough time to create something more professional ;)
