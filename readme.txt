@@ -31,5 +31,6 @@ Notice:
   - I was writing code quickly, and you can show my coding skills when taking a look at the script code  
   - Online users system does'nt work but 80% of the code was realized !
   - Private messaging  deoesn't work but 80% of the code was realize !
+  - I was coding very quickly so forget some static parts of the code like the project name must be 'MyApplication' to be deployed correctly, and I ensured that script will work only when there's a content(old messages).
   
 Kindly Regards :)
